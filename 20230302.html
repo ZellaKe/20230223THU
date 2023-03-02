@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>哇哈哈</title>
+	</head>
+
+	<body>
+		<h1>三月你好</h1>
+		
+		<table border="2">
+			<tr>
+				<th>書名</th>
+				<th>書名</th>
+			</tr>	
+			<tr>
+				<td>鏈句人</td>
+				<td>謄本數</td>	
+			</tr>
+			<tr>
+				<td>七龍珠</td>
+				<td>鳥山明</td>	
+			</tr>	
+		</table>
+
+		<h1>BMI計算器</h1>
+		
+		<table border="2">
+			<tr>
+				<th>身高</th>
+				<th>體重</th>
+			</tr>	
+			<tr>
+				<td><input type="number" id="height" name="height" placeholder="公尺"></td>
+				<td><input type="number" id="weight" name="weight" placeholder="公斤"></td>	
+			</tr>
+			<tr>
+				<td></td>
+				<td><button id="calcustor" onclick="calculate()">計算</button></td>	
+			</tr>	
+		</table>
+
+		<script type="text/javascript">
+			function calculate() {
+				let height=document.querySelector("#height").value;
+				let weight=document.querySelector("#weight").value;
+				alert("身高"+height);
+				alert("體重"+weight);
+				let bmi = weight / (height * height);
+				alert("BMI"+bmi);
+				
+				if(bmi<18.5){
+					alert("體重過輕");
+				}else if (bmi>=18.5 && bmi< 24){
+					alert("健康體位");
+				}else{
+					alert("體位異常");
+				}
+				}
+		</script>
+
+		<h2>三月</h2>
+		<h3>三月</h3>
+		<h4>三月</h4>
+		<h5>三月</h5>
+		<h6>三月</h6>
+		這是我的網頁
+	</body>
+</html>
