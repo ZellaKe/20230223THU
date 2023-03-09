@@ -1,11 +1,20 @@
 <style>
 	#result1{
-		background-image: url(https://www.japaholic.com/storage/uploads/2022/02/19//1164272_1500_1645204438.jpg)
+		background-color: #0BDB84;
+		width:100px;
+		height:100px;
+        color:white;
+        font-weight: bold;
+        font-size:10px;
 		
 		
 	}
-	#result2{background-image: url(https://www.japaholic.com/storage/uploads/2022/02/19//1164272_1500_1645204438.jpg);
-	
+	#result2{background-color:#EDFA6A;
+	    width:100px;
+		height:100px;
+        color:white;
+        font-weight: bold;
+        font-size:10px;
         
 	}
 
@@ -17,15 +26,24 @@
 <div id='result2'>
 </div> 
 
+<div>
+	<label for="x">A</label>
+	<input type="number" name="x">
+	<br>
+	<label for="y">B</label>
+	<input type="number" name="y">
+	<br>
+	<button id="btn">顯示投票結果</button>
+</div> 
+
 <script>
 let message="hello";
 
-let x=1;
-let y=3;
-let z=x>y;
+let x="A";
+let y="B";
+
 document.querySelector("#result1").innerText=x;
 document.querySelector("#result2").innerText=y;
-(typeof z); //typeof代表類型
-(z);
+
 
 </script>
