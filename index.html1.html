@@ -28,22 +28,33 @@
 
 <div>
 	<label for="x">A</label>
-	<input type="number" name="x">
+	<input type="number" name="x" id="x">
 	<br>
 	<label for="y">B</label>
-	<input type="number" name="y">
+	<input type="number" name="y" id="y">
 	<br>
-	<button id="btn">顯示投票結果</button>
+	<button id="btn" onclick="show()">顯示投票結果</button>
 </div> 
 
 <script>
 let message="hello";
-
 let x="A";
 let y="B";
 
-document.querySelector("#result1").innerText=x;
-document.querySelector("#result2").innerText=y;
+
+ x="A<img src='https://www.japaholic.com/storage/files/article_images/NzkyMDIyMDIxODIxMjYxMjkw.jpg' width='50' height='50'>";
+y="B<img src='https://www.ttvc.com.tw/data/images/202203/dreamstime_s_37057229.jpg' width='50' height='50'>";
+
+document.querySelector("#result1").innerHTML=x;
+document.querySelector("#result2").innerHTML=y;
+
+function show(){
+	let result_x=document.querySelector("#x").value;
+	let result_y=document.querySelector("#y").value;
+	document.querySelector("#result1").style.width = result_x + "px";
+	document.querySelector("#result2").style.width = result_y + "px";
+}
+
 
 
 </script>
