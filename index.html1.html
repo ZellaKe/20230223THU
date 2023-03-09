@@ -1,29 +1,36 @@
 <style>
+.result1{
+	width:100px;
+	height:100px;
+	color:green;
+    font-weight: bold;
+    font-size:20px;
+}
+
 	#result1{
 		background-color: #0BDB84;
-		width:100px;
-		height:100px;
-        color:white;
-        font-weight: bold;
-        font-size:10px;
-		
-		
-	}
+		}
 	#result2{background-color:#EDFA6A;
-	    width:100px;
-		height:100px;
-        color:white;
-        font-weight: bold;
-        font-size:10px;
-        
-	}
+	    }
+
+button{
+	width:100px;
+	height:100px;
+	font-size:30px;
+}
+
+#cancle{
+	background-color: rgba(255, 0, 0, 0.6);
+	color: white;
+}
+
 
 </style>
 
-<div id='result1'>
+<div id='result1' class="result">
 </div> 
 
-<div id='result2'>
+<div id='result2' class="result">
 </div> 
 
 <div>
@@ -34,6 +41,8 @@
 	<input type="number" name="y" id="y">
 	<br>
 	<button id="btn" onclick="show()">顯示投票結果</button>
+	<button id="cancle" onclick="cancle()">回復原始狀態</button>
+
 </div> 
 
 <script>
@@ -42,7 +51,7 @@ let x="A";
 let y="B";
 
 
- x="A<img src='https://www.japaholic.com/storage/files/article_images/NzkyMDIyMDIxODIxMjYxMjkw.jpg' width='50' height='50'>";
+x="A<img src='https://www.japaholic.com/storage/files/article_images/NzkyMDIyMDIxODIxMjYxMjkw.jpg' width='50' height='50'>";
 y="B<img src='https://www.ttvc.com.tw/data/images/202203/dreamstime_s_37057229.jpg' width='50' height='50'>";
 
 document.querySelector("#result1").innerHTML=x;
@@ -54,6 +63,13 @@ function show(){
 	document.querySelector("#result1").style.width = result_x + "px";
 	document.querySelector("#result2").style.width = result_y + "px";
 }
+
+function cancle(){
+	document.querySelector("#result1").style.width = "100px";
+	document.querySelector("#result2").style.width = "100px";
+}
+
+
 
 
 
