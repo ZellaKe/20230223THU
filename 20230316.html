@@ -56,7 +56,7 @@ p {
 
   
 
-    <div class="one">1234 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg/330px-Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg" width="100" height="100">
+    <div class="one">1234 <img id="jin_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg/330px-Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg" width="100" height="100">
 
       <audio controls>
   <source src="房東的貓 - 浪漫日記2.mp3" type="audio/mpeg">
@@ -75,6 +75,23 @@ Your browser does not support the audio element.
 
 <h1>My First CSS Example</h1>
 <p>This is a paragraph.</p>
+
+<script>
+ let jins=['https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2023/03/14/0/20613773.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=720&nt=1','https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2023/03/14/0/20613772.jpg&x=0&y=0&sw=0&sh=0&exp=3600&w=800&nt=1'];
+
+let count=0;
+
+setInterval(
+  function(){
+    document.querySelector("#jin_image").src=jins[count%2];
+    count=count+1;
+
+  },
+  3000
+  );
+
+</script>
+
 
 </body>
 </html>
