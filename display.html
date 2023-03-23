@@ -1,7 +1,28 @@
 <html>
- <head>
+<head>
 	<title>顯示與隱藏</title>
- </head>
+
+
+	<style>
+		.animal img{
+			width: 100px;
+			height: 100px;
+		}
+		.sky img{
+			width: 150px;
+			height: 150px;
+		}
+		.seaanimal img{
+			width: 200px;
+			height: 200px;
+		}
+
+		.animal,.sky,.seaanimal{
+			display: inline-block;
+		}
+
+	</style>
+</head>
 
 <body>
 	<button onclick="hide();">隱藏文字</button>
@@ -13,39 +34,62 @@
 
 
 	<div class="news_title">
-	 第六週上課
-	 </br>
-	 要準備期中報告
+		第六週上課
+	</br>
+	要準備期中報告
+</div>
+<div class="biology">
+	<div class="bird sky">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/640px-Eopsaltria_australis_-_Mogo_Campground.jpg" width="200" height="200"  > 
 	</div>
 
-	<div class="cat">
-		<img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2016/08/15/20160815-101109_U5308_M185730_f857.jpg?itok=cMaVq5sC" width="200" height="200"  > 
-	</div>
 
-	<button class="cat">
-		<img src="https://www.japaholic.com/storage/files/article_images/NzkyMDIyMDIxODIxMjYxMjkw.jpg" width="200" height="200"  > 
+	<div class="ladybug sky">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/d/de/BIEDRONA.JPG" width="200" height="200"  > 
+	</div>
+</div>
+
+<div class="biology">
+	<button class="dog animal">
+		<img src="https://hips.hearstapps.com/hmg-prod/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=1.00xw:0.756xh;0,0.0756xh&resize=1200:*" width="200" height="200"  > 
 	</button>
+	<div class="cat animal">
+		<img src="https://hips.hearstapps.com/hmg-prod/images/domestic-cat-lies-in-a-basket-with-a-knitted-royalty-free-image-1592337336.jpg?crop=0.88889xw:1xh;center,top&resize=1200:*" width="200" height="200"  > 
+	</div>
+</div>
 
-	<script type="text/javascript">
- function hide(){
- 	document.querySelector(".news_title").style.display="none";
- }
- function show(){
- 	document.querySelector(".news_title").style.display="block";
- }
- function hidecat(){
- 	let elements=document.querySelectorAll(".cat");
- 	for(let i = 0; i < elements.length; i=i+1){
- 		elements[i].style.display="none";
- 	}
- 	
- }
- function showcat(){
- 	let elements=document.querySelectorAll(".cat");
- 	for(let i = 0; i < elements.length; i=i+1){
- 		elements[i].style.display="block";
- 	}
- }
- 	</script>
-    </body>
+<div class="biology">
+	<div class="turtle seaanimal">
+		<img src="https://scitechvista.nat.gov.tw/FileDownload/Article/20190516165543000000269.jpg" width="200" height="200"  > 
+	</div>
+
+	<div class="Octopus seaanimal">
+		<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17B79/production/_126354179_5ac368fb-118e-4091-af06-0daef3e69fed.jpg" width="200" height="200"  > 
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	function hide(){
+		document.querySelector(".news_title").style.display="none";
+	}
+	function show(){
+		document.querySelector(".news_title").style.display="block";
+	}
+	function hidecat(){
+		let elements=document.querySelectorAll(".cat");
+		for(let i = 0; i < elements.length; i=i+1){
+			elements[i].style.display="none";
+		}
+
+	}
+	function showcat(){
+		let elements=document.querySelectorAll(".cat");
+		for(let i = 0; i < elements.length; i=i+1){
+			elements[i].style.display="block";
+		}
+	}
+</script>
+</body>
 </html>
