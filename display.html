@@ -8,13 +8,22 @@
 	<button onclick="show();">顯示文字</button>
 	<button onclick="hidenewjeans();">隱藏newjeans</button>
 	<button onclick="shownewjeans();">顯示newjeans</button>
+	<button onclick="hidecat();">隱藏cat</button>
+	<button onclick="showcat();">顯示cat</button>
 	<div class="news_title">
 	 第六週上課
 	 </br>
 	 要準備期中報告
 	</div>
+
 	<div class="newjeans">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/NewJeans_theMEGASTUDY.jpg" width="200" height="200"  >
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/NewJeans_theMEGASTUDY.jpg" width="200" height="200"  > 
+	</div>
+
+	<div class="cat">
+		<img src="https://www.japaholic.com/storage/files/article_images/NzkyMDIyMDIxODIxMjYxMjkw.jpg" width="200" height="200"  > 
+	</div>
+
 	<script type="text/javascript">
  function hide(){
  	document.querySelector(".news_title").style.display="none";
@@ -27,6 +36,12 @@
  }
  function shownewjeans(){
  	document.querySelector(".newjeans").style.display="block";
+ }
+ function hidecat(){
+ 	document.querySelector(".cat").style.display="none";
+ }
+ function showcat(){
+ 	document.querySelector(".cat").style.display="block";
  }
  	</script>
     </body>
