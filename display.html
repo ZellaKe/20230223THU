@@ -1,15 +1,33 @@
 <html>
-<head>
+ <head>
 	<title>顯示與隱藏</title>
-</head>
+ </head>
 
 <body>
-
-
-<div class="news_title">
-第六週上課
-</br>
-要準備期中報告
-</body>
-
-</div> 
+	<button onclick="hide();">隱藏文字</button>
+	<button onclick="show();">顯示文字</button>
+	<button onclick="hidenewjeans();">隱藏newjeans</button>
+	<button onclick="shownewjeans();">顯示newjeans</button>
+	<div class="news_title">
+	 第六週上課
+	 </br>
+	 要準備期中報告
+	</div>
+	<div class="newjeans">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/NewJeans_theMEGASTUDY.jpg" width="200" height="200"  >
+	<script type="text/javascript">
+ function hide(){
+ 	document.querySelector(".news_title").style.display="none";
+ }
+ function show(){
+ 	document.querySelector(".news_title").style.display="block";
+ }
+ function hidenewjeans(){
+ 	document.querySelector(".newjeans").style.display="none";
+ }
+ function shownewjeans(){
+ 	document.querySelector(".newjeans").style.display="block";
+ }
+ 	</script>
+    </body>
+</html>
